@@ -15,7 +15,7 @@
     
 }
 body{
-    background: rgb(48, 85, 89);
+    background: white;
 }
 
 h1 {
@@ -94,6 +94,11 @@ h4, h5, h6{
         }
      }
   
+ }
+ .logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 1%;
  }
 
         .checkbtn {
@@ -216,7 +221,7 @@ h4, h5, h6{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    .presentation-index-left{
+    .presentation-index-right{
         display: flex;
         flex-direction: column;
         justify-content: center;
