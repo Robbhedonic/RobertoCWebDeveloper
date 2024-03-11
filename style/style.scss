@@ -1,0 +1,404 @@
+@import "./variable";
+
+@import "./about";
+
+@import "./loader.scss";
+@import "./empirev";
+@import "./mainempire";
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: rgb(48, 85, 89);
+}
+
+h1 {
+    padding-bottom: 4%;
+    font-size: 45px;
+    
+}
+
+p {
+    font-size: 18px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+a,
+h1,
+h3 ,p, label,p {
+    color: black;
+    font-family: $title-family-font;
+
+}
+.looking-intership {
+    text-align: center;
+    padding: 2%;
+}
+p{
+    line-height: 20px;
+    text-align: justify;
+}
+h4, h5, h6{
+    font-family: $title-family-font;
+    
+}
+
+
+.nav-1 {
+     width: 100%;
+     padding-top: 20px;
+     padding-bottom: 15px;
+   
+     border-bottom: solid 1px black;
+
+     ul {
+        float: right;
+        margin-right: 20px;
+        li{
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 5px;
+            border: solid black 1px;
+
+            a{
+           
+              
+              
+                padding: 7px 13px;
+                border-radius: 10px;
+              
+                 &:hover{
+                    background: $secondary-background-color;
+                    color: $third-text-color;
+                    transition: 0.5s;
+                }
+            }
+            p{
+                
+                
+                    padding: 7px 13px;
+                    border-radius: 10px;
+
+            }
+        }
+     }
+  
+ }
+
+        .checkbtn {
+            font-size: 20px;
+            color: black;
+            float: right;
+            line-height: 40px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+    
+        #check {
+            display: none;
+        }
+    
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 20px;
+                padding-left: 50px;
+            }
+    
+            .nav-1 ul li a {
+                font-size: 10px;
+            }
+    
+        }
+    
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+             
+            }
+    
+            .nav-1 ul {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+         
+                z-index: 2;
+               
+                li a{
+                    color: rgb(0, 0, 0);
+                    font-size: 12px;
+                    min-height: 50px;
+                    min-width: 100px;
+             
+                    &:hover{
+                        background:$primary-background-color;
+                        color: $primary-text-color;
+                        
+                    }
+                }
+                li{
+                    padding: 10px;
+                    &:hover{
+                        color: $primary-text-color;
+                    }
+
+                }
+              
+    
+            }
+    
+            .nav-1 ul li {
+                display: block;
+            }
+            
+    
+            #check:checked ~ ul {
+                left: 0;
+            }
+    
+    
+    
+    
+}
+ label.logo{
+    font-family: $title-family-font;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 20px;
+ }
+
+ .location-in-website {
+     display: flex;
+     align-items:start;
+     justify-content: center;
+   
+
+     .location-indice {
+  
+         font-family: $title-family-font ;
+         color: white;
+         padding: 5px;
+         background: black;
+     }
+    .triangle-right {
+        height: 0;
+        width: 0;
+        border-bottom: 28px solid transparent;
+        border-left: 25px solid black;
+    }
+    .triangle-left {
+        height: 0;
+        width: 0;
+        border-bottom: 28px solid transparent;
+        border-right: 25px solid black;
+        
+    }
+ }
+
+.first-section{
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .presentation-index-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+        min-width: 280px;
+    
+        max-width: 600px;
+       
+       .profile-photo{
+        width: 250px;
+        height: 250x;
+        border-radius: 250px;
+       }
+    }
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    border-top: solid 1px black;
+
+    ul li {
+        font-weight: 1200;
+        font-size: 10px;
+        font-family: $other-family-font;
+        
+        a{
+
+            font-weight: 400;
+           
+        }
+        :hover {
+            font-weight: bolder;
+            color: $primary-text-color;
+        }
+        
+    }
+    .copyright-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        
+    }
+}
+
+
+.nav-1 li{
+
+
+    border: 2px solid black;
+    border-radius: $border-radius;
+    
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    position: static;
+    z-index: -3;
+    top: 0;
+    right: 0;
+
+   
+    background-attachment: scroll;
+}
+.spline {
+    z-index: -1;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .box-education {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 2%;
+  
+            margin: 1%;
+
+            .box-school{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .schools-icons {
+                        width: 150px;
+                        height: 150px;
+                        padding: 10%;
+                    }
+            }
+
+
+            .box-skills{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .skills {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-wrap: wrap;
+                     
+                
+                        .skills-icons {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50px;
+                         
+                        }
+                        .box-icons{
+                            margin: 2%;
+                        }
+
+                    }
+
+
+
+            }
+
+
+            
+
+           
+        }
+}
+
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .languages-boxes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .box-languages{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 4%;
+            padding: 10px;
+            text-align: center;
+
+
+            .icon-languages {
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+                
+            }
+
+        }
+
+    }
+
+
+    
+}
+
+.education, .languages{
+    margin-top: 4%;
+}
