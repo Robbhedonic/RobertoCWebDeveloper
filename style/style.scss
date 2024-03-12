@@ -408,3 +408,11 @@ iframe{
 .education, .languages{
     margin-top: 4%;
 }
+.note{
+    @media (max-width: 600px){
+        h1{
+            font-size: 40px;
+        }
+
+    }
+}

@@ -1108,4 +1108,10 @@ iframe {
 
 .education, .languages {
   margin-top: 4%;
+}
+
+@media (max-width: 600px) {
+  .note h1 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
