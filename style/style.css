@@ -1111,7 +1111,7 @@ iframe {
 }
 
 @media (max-width: 600px) {
-  .note h1 {
-    font-size: 40px;
+  h1 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
